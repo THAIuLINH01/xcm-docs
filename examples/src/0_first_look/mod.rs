@@ -1,5 +1,14 @@
 #[cfg(test)]
-mod tests {
+mod tests {DepositAsset {
+    assets: All.into(),
+    beneficiary: MultiLocation {
+        parents: 0,
+        interior: Junction::AccountId32 {
+            network: None,
+            id: BOB.clone().into()
+        }.into(),
+    }.into()
+}
 	// use crate::test_net::kusama_test_net::*;
 	use crate::simple_test_net::*;
 	use frame_support::assert_ok;
